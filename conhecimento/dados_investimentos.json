@@ -1,0 +1,162 @@
+[
+  {
+    "nome": "Tesouro Selic 2029",
+    "ticker": "LFT",
+    "categoria": "Renda Fixa",
+    "sinonimos": ["tesouro selic", "lft", "reserva de emergencia", "titulo publico"],
+    "perfil_indicado": "Conservador",
+    "tributacao": {
+      "tabela": "regressiva_ir",
+      "aliquotas": "22.5% (até 180 dias) a 15.0% (acima de 720 dias)",
+      "isencao": "não possui isenção de IR"
+    },
+    "rentabilidade": "100% da Taxa Selic + pequena taxa fixa",
+    "risco": "muito baixo (garantido pelo Tesouro Nacional)",
+    "liquidez": "diária (D+1)",
+    "observacao": "Ideal para reserva de emergência e objetivos de curto prazo."
+  },
+  {
+    "nome": "Petrobras PN",
+    "ticker": "PETR4",
+    "categoria": "Ações",
+    "sinonimos": ["petrobras", "petr4", "acao petrobras", "petrobras preferencial"],
+    "perfil_indicado": "Moderado a Arrojado",
+    "tributacao": {
+      "tabela": "acoes_mercado_vista",
+      "aliquotas": "15% em Swing Trade e 20% em Day Trade sobre o lucro",
+      "isencao": "isento para vendas totais de ações até R$ 20.000,00 no mês"
+    },
+    "rentabilidade": "Dividend Yield alto (histórico acima de 12% a.a.) + valorização das ações",
+    "risco": "alto (volatilidade da commodity de petróleo e ingerência estatal)",
+    "liquidez": "alta (D+2 na B3)",
+    "observacao": "Boa pagadora de proventos, porém exposta a riscos políticos e preço do barril Brent."
+  },
+  {
+    "nome": "Vale ON",
+    "ticker": "VALE3",
+    "categoria": "Ações",
+    "sinonimos": ["vale", "vale3", "acao vale", "mineradora vale"],
+    "perfil_indicado": "Moderado a Arrojado",
+    "tributacao": {
+      "tabela": "acoes_mercado_vista",
+      "aliquotas": "15% em Swing Trade e 20% em Day Trade sobre o lucro",
+      "isencao": "isento para vendas totais de ações até R$ 20.000,00 no mês"
+    },
+    "rentabilidade": "Atrelada ao preço do Minério de Ferro na China + Dividend Yield médio de 8% a.a.",
+    "risco": "alto (dependência da economia chinesa e ciclo global de commodities)",
+    "liquidez": "alta (D+2 na B3)",
+    "observacao": "Maior exportadora da B3, ótima para diversificação internacional via receita em dólar."
+  },
+  {
+    "nome": "CSHG Logística FII",
+    "ticker": "HGLG11",
+    "categoria": "Fundos Imobiliários",
+    "sinonimos": ["hglg11", "hglg", "fundo imobiliario hglg", "fii de galpao"],
+    "perfil_indicado": "Moderado",
+    "tributacao": {
+      "tabela": "fiis",
+      "aliquotas": "20% sobre o ganho de capital na venda da cota",
+      "isencao": "rendimentos mensais (proventos) são isentos de IR para pessoa física"
+    },
+    "rentabilidade": "Dividend Yield em torno de 8% a 9% a.a. pagos mensalmente",
+    "risco": "médio (risco de vacância dos galpões logísticos e inadimplência de inquilinos)",
+    "liquidez": "alta (D+2 na B3)",
+    "observacao": "Fundo tijolo consolidado com imóveis logísticos de alto padrão no Sudeste."
+  },
+  {
+    "nome": "Kinea Rendimentos Imobiliários",
+    "ticker": "KNCR11",
+    "categoria": "Fundos Imobiliários",
+    "sinonimos": ["kncr11", "kncr", "fundo de papel", "fii de cri"],
+    "perfil_indicado": "Conservador a Moderado",
+    "tributacao": {
+      "tabela": "fiis",
+      "aliquotas": "20% sobre o ganho de capital na venda da cota",
+      "isencao": "rendimentos mensais isentos de IR para pessoa física"
+    },
+    "rentabilidade": "Distribuído mensalmente atrelado ao CDI + taxa",
+    "risco": "médio-baixo (fundo de papel focado em CRIs de alta qualidade de crédito)",
+    "liquidez": "alta (D+2 na B3)",
+    "observacao": "Ideal para momentos de juros altos (Selic elevada), pois seus títulos acompanham o CDI."
+  },
+  {
+    "nome": "CDB Banco BTG Pactual 100% CDI",
+    "ticker": "CDB-BTG",
+    "categoria": "Renda Fixa",
+    "sinonimos": ["cdb", "cdb liquidez diaria", "cdb btg", "certificado de deposito bancario"],
+    "perfil_indicado": "Conservador",
+    "tributacao": {
+      "tabela": "regressiva_ir",
+      "aliquotas": "22.5% (até 180 dias) a 15.0% (acima de 720 dias)",
+      "isencao": "não possui isenção de IR"
+    },
+    "rentabilidade": "100% do CDI com rendimento diário",
+    "risco": "baixo (protegido pelo FGC até R$ 250.000,00 por CPF)",
+    "liquidez": "diária (resgate imediato)",
+    "observacao": "Excelente alternativa à poupança para guardar caixa de curto prazo com garantia do FGC."
+  },
+  {
+    "nome": "iShares BOVA11 ETF",
+    "ticker": "BOVA11",
+    "categoria": "ETFs",
+    "sinonimos": ["bova11", "etf ibovespa", "bova", "indice ibovespa"],
+    "perfil_indicado": "Moderado a Arrojado",
+    "tributacao": {
+      "tabela": "etf_renda_variavel",
+      "aliquotas": "15% sobre o lucro independente do valor de venda",
+      "isencao": "não possui a isenção dos R$ 20 mil das ações normais"
+    },
+    "rentabilidade": "Replica o desempenho do Índice Ibovespa (as maiores empresas do Brasil)",
+    "risco": "alto (acompanha a oscilação média de toda a bolsa brasileira)",
+    "liquidez": "alta (D+2 na B3)",
+    "observacao": "Permite comprar uma carteira diversificada de mais de 80 ações brasileiras com apenas uma cota."
+  },
+  {
+    "nome": "LCI Banco Inter 90% CDI",
+    "ticker": "LCI-INTER",
+    "categoria": "Renda Fixa",
+    "sinonimos": ["lci", "letra de credito imobiliario", "lci inter"],
+    "perfil_indicado": "Conservador",
+    "tributacao": {
+      "tabela": "isenta_ir",
+      "aliquotas": "0% de Imposto de Renda",
+      "isencao": "totalmente isenta de IR para Pessoas Físicas"
+    },
+    "rentabilidade": "90% do CDI líquidos",
+    "risco": "baixo (garantido pelo FGC até R$ 250.000,00 por CPF)",
+    "liquidez": "após carência de 90 a 365 dias",
+    "observacao": "Por ser isenta de IR, equivale frequentemente a um CDB de mais de 105% do CDI."
+  },
+  {
+    "nome": "Tesouro IPCA+ 2035",
+    "ticker": "NTN-B",
+    "categoria": "Renda Fixa",
+    "sinonimos": ["tesouro ipca", "ntn-b", "titulo inflacao", "protecao contra inflacao"],
+    "perfil_indicado": "Conservador a Moderado",
+    "tributacao": {
+      "tabela": "regressiva_ir",
+      "aliquotas": "22.5% (até 180 dias) a 15.0% (acima de 720 dias)",
+      "isencao": "não possui isenção de IR"
+    },
+    "rentabilidade": "Variação do IPCA (Inflação) + Taxa fixa em torno de 6,0% a.a.",
+    "risco": "médio se resgatado antes do vencimento (marcação a mercado); baixo se levado até 2035",
+    "liquidez": "diária (porém sujeita à marcação a mercado no resgate antecipado)",
+    "observacao": "Ideal para objetivos de longo prazo como aposentadoria, garantindo ganho real acima da inflação."
+  },
+  {
+    "nome": "WEG SA",
+    "ticker": "WEGE3",
+    "categoria": "Ações",
+    "sinonimos": ["weg", "wege3", "acao weg", "motores weg"],
+    "perfil_indicado": "Moderado a Arrojado",
+    "tributacao": {
+      "tabela": "acoes_mercado_vista",
+      "aliquotas": "15% em Swing Trade e 20% em Day Trade sobre o lucro",
+      "isencao": "isento para vendas totais de ações até R$ 20.000,00 no mês"
+    },
+    "rentabilidade": "Histórico de alta valorização de capital (Crescimento) + Dividend Yield modesto (2% a.a.)",
+    "risco": "médio-alto (empresa de altíssima qualidade, porém negociada a múltiplos mais esticados)",
+    "liquidez": "alta (D+2 na B3)",
+    "observacao": "Multinacional brasileira referência em motores elétricos e equipamentos de energia renovável."
+  }
+]

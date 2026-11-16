@@ -1,0 +1,62 @@
+[
+  {
+    "pergunta": "Qual é a opção mais indicada para formar minha reserva de emergência?",
+    "resposta": "O Tesouro Selic 2029 (LFT) e o CDB Banco BTG Pactual 100% CDI são os mais indicados por possuírem baixo risco, liquidez diária e perfil conservador."
+  },
+  {
+    "pergunta": "Como funciona a isenção de Imposto de Renda na venda de ações como PETR4 e VALE3?",
+    "resposta": "As vendas de ações no mercado à vista (Swing Trade) são isentas de IR para alienações totais de até R$ 20.000,00 no mês. Acima desse valor, a alíquota é de 15% sobre o lucro."
+  },
+  {
+    "pergunta": "Como é cobrado o Imposto de Renda nos Fundos Imobiliários como HGLG11 e KNCR11?",
+    "resposta": "Os rendimentos mensais distribuídos por FIIs são isentos de IR para pessoa física. Porém, o ganho de capital obtido na venda das cotas é tributado em 20%."
+  },
+  {
+    "pergunta": "Qual é a vantagem da LCI Banco Inter em relação ao CDB?",
+    "resposta": "A LCI Banco Inter possui alíquota de 0% de IR (totalmente isenta para pessoa física), fazendo com que seu rendimento de 90% do CDI equivalha a um CDB tributado de mais de 105% do CDI."
+  },
+  {
+    "pergunta": "Qual título é recomendado para proteger o patrimônio contra a inflação no longo prazo?",
+    "resposta": "O Tesouro IPCA+ 2035 (NTN-B) é o mais indicado, pois garante o rendimento da variação da inflação (IPCA) acrescido de uma taxa fixa de juros (ganho real)."
+  },
+  {
+    "pergunta": "Qual a diferença de tributação entre investir em ações diretamente e investir via ETF BOVA11?",
+    "resposta": "Vendas de ações possuem isenção mensal para operações até R$ 20.000,00. Já o ETF BOVA11 não conta com essa isenção, sendo tributado em 15% sobre o lucro em qualquer valor de venda."
+  },
+  {
+    "pergunta": "Quais ativos da base são cobertos pela garantia do FGC?",
+    "resposta": "O CDB Banco BTG Pactual 100% CDI e a LCI Banco Inter 90% CDI são cobertos pelo FGC (Fundo Garantidor de Créditos) em até R$ 250.000,00 por CPF."
+  },
+  {
+    "pergunta": "Quais ações da base são recomendadas para quem busca Dividend Yield elevado?",
+    "resposta": "A Petrobras (PETR4), com histórico de Dividend Yield acima de 12% a.a., e a Vale (VALE3), com média de 8% a.a., são as principais pagadoras de proventos da base."
+  },
+  {
+    "pergunta": "Como funciona a tabela regressiva de Imposto de Renda na Renda Fixa?",
+    "resposta": "A tabela regressiva incide sobre CDBs e Tesouro Direto, começando em 22.5% para aplicações de até 180 dias e caindo progressivamente até 15.0% para prazos acima de 720 dias."
+  },
+  {
+    "pergunta": "O que é marcação a mercado e como ela afeta o Tesouro IPCA+ 2035?",
+    "resposta": "É a oscilação do valor do título antes do vencimento. O Tesouro IPCA+ tem risco médio se resgatado antecipadamente por conta disso, mas garante o retorno contratado se mantido até 2035."
+  },
+  {
+    "pergunta": "Qual o perfil de investidor recomendado para aplicar no fundo imobiliário HGLG11?",
+    "resposta": "O HGLG11 é indicado para o perfil Moderado, pois é um fundo imobiliário de tijolo focado em galpões logísticos de alto padrão, apresentando risco médio."
+  },
+  {
+    "pergunta": "Qual a diferença de atuação entre a Petrobras (PETR4) e a WEG (WEGE3)?",
+    "resposta": "PETR4 é uma petroleira focada em commodities com alto Dividend Yield, enquanto WEGE3 é uma multinacional de equipamentos elétricos com foco em crescimento de capital e rendimento de dividendos modesto."
+  },
+  {
+    "pergunta": "Para que serve o ETF BOVA11 na montagem de carteira?",
+    "resposta": "Servindo aos perfis Moderado a Arrojado, o BOVA11 permite comprar em uma única cota uma carteira diversificada que replica o desempenho das maiores empresas da bolsa brasileira."
+  },
+  {
+    "pergunta": "Por que o fundo KNCR11 é vantajoso em períodos de juros elevados?",
+    "resposta": "Por ser um fundo imobiliário de papel investido em CRIs atrelados ao CDI, o KNCR11 se beneficia diretamente do cenário de Selic alta, aumentando suas distribuições mensais."
+  },
+  {
+    "pergunta": "Quais ativos da base possuem liquidez imediata para resgate no mesmo dia?",
+    "resposta": "O CDB Banco BTG Pactual 100% CDI possui liquidez diária com resgate imediato, enquanto o Tesouro Selic conta com liquidez em D+1."
+  }
+]
