@@ -1,30 +1,30 @@
 # InvestBot
 
-[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
-[![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=google&logoColor=white)](https://ai.google.dev/)
-[![MCP](https://img.shields.io/badge/MCP-000000?style=flat-square&logo=mcp&logoColor=white)](https://modelcontextprotocol.io/)
-[![ChromaDB](https://img.shields.io/badge/ChromaDB-1F76AB)](https://www.trychroma.com/)
-[![LLM-as-a-Judge](https://img.shields.io/badge/LLM--as--a--Judge-8B5CF6)](#avaliação)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Gemini](https://img.shields.io/badge/Gemini-6E69FF?style=for-the-badge&logo=googlegemini&logoColor=white)](https://ai.google.dev/)
+[![MCP](https://img.shields.io/badge/MCP-000000?style=for-the-badge&logo=protocols&logoColor=white)](https://modelcontextprotocol.io/)
+[![ChromaDB](https://img.shields.io/badge/ChromaDB-1F76AB?style=for-the-badge&logo=databricks&logoColor=white)](https://www.trychroma.com/)
+[![LLM as a Judge](https://img.shields.io/badge/LLM_as_a_Judge-5A2BF6?style=for-the-badge&logo=openai&logoColor=white)](#avaliação)
 
-
-Um sistema especialista conversacional voltado para finanças pessoais e investimentos na B3. Ele emula o raciocínio de um consultor financeiro certificado, auxiliando o usuário na recomendação de ativos conforme o  perfil de risco (suitability), sugere diversificação e explica regras tributárias de Imposto de Renda.
+Um sistema especialista conversacional voltado para finanças pessoais e investimentos na B3. Ele emula o raciocínio de um consultor financeiro certificado, auxiliando o usuário na recomendação de ativos conforme o perfil de risco (suitability), sugere diversificação e explica regras tributárias de Imposto de Renda.
 
 
 ## Arquitetura
-<p align="center">
-  <img src="./assets/arquitetura-investbot.png" alt="Arquitetura do InvestBot" width="500">
-</p>
 
+<p align="center">
+  <img src="./assets/arquitetura-investbot.png" alt="Arquitetura do InvestBot" width="800">
+</p>
 
 ### Ferramentas MCP
 
-| Ferramenta | Funcionalidade |
-|---|---|
-| `listar_ativos` | Lista todos os ativos disponíveis, agrupados por categoria. |
-| `consultar_tributacao` | Consulta tabela, alíquotas e isenções de Imposto de Renda. |
-| `consultar_rentabilidade_risco` | Consulta rentabilidade, risco, liquidez e perfil recomendado. |
-| `consultar_ativo` | Retorna a visão completa de um ativo. |
-| `filtrar_por_perfil` | Lista os ativos indicados para Conservador, Moderado ou Arrojado. |
+| Ferramenta                      | Funcionalidade                                                    |
+| ------------------------------- | ----------------------------------------------------------------- |
+| `listar_ativos`                 | Lista todos os ativos disponíveis, agrupados por categoria.       |
+| `consultar_tributacao`          | Consulta tabela, alíquotas e isenções de Imposto de Renda.        |
+| `consultar_rentabilidade_risco` | Consulta rentabilidade, risco, liquidez e perfil recomendado.     |
+| `consultar_ativo`               | Retorna a visão completa de um ativo.                             |
+| `filtrar_por_perfil`            | Lista os ativos indicados para Conservador, Moderado ou Arrojado. |
+
 
 ## Exemplos de perguntas
 
@@ -58,14 +58,14 @@ Você pode fazer perguntas em linguagem natural, por exemplo:
 - Qual título pode proteger meu patrimônio contra a inflação?
 - Quais ativos da base possuem liquidez diária?
 
-As respostas são baseadas nos dados disponíveis em
-`conhecimento/dados_investimentos.json`. Para perguntas sobre ativos, risco,
-liquidez ou tributação, o assistente pode executar uma ou mais ferramentas MCP.
+As respostas são baseadas nos dados disponíveis em `conhecimento/dados_investimentos.json`. Para perguntas sobre ativos, risco, liquidez ou tributação, o assistente pode executar uma ou mais ferramentas MCP.
+
 
 ## Pré-requisitos
 
 - Python 3.12 ou superior.
 - Uma chave de API do Google Gemini.
+
 
 ## Execução
 
@@ -136,10 +136,7 @@ As ferramentas disponíveis estão descritas na tabela acima.
 
 ### Avaliação LLM-as-a-Judge
 
-O script de avaliação usa `conhecimento/investimentos_menor.json`, destinado a conter
-um conjunto reduzido de perguntas e respostas, normalmente quatro casos. Essa base
-menor reduz o número de chamadas ao modelo, o tempo de execução e o consumo de
-tokens durante o julgamento.
+O script de avaliação usa `conhecimento/investimentos_menor.json`, destinado a conter um conjunto reduzido de perguntas e respostas, normalmente quatro casos. Essa base menor reduz o número de chamadas ao modelo, o tempo de execução e o consumo de tokens durante o julgamento.
 
 Execute em outro terminal:
 
@@ -159,9 +156,8 @@ O arquivo menor precisa existir e conter registros válidos. Cada registro deve 
 O julgamento também testa dois casos intencionalmente inadequados definidos em
 `CASOS_INADEQUADOS`.
 
-O fluxo usa um segundo contexto do Gemini para avaliar se as respostas são adequadas
-e justificar o veredito. A base reduzida é recomendada para evitar consumo
-desnecessário de tokens.
+O fluxo usa um segundo contexto do Gemini para avaliar se as respostas são adequadas e justificar o veredito. A base reduzida é recomendada para evitar consumo desnecessário de tokens.
+
 
 ## Estrutura do projeto
 
