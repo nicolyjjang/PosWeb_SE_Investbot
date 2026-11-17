@@ -24,16 +24,20 @@ def iniciar_persona_assistente(conhecimento):
         },
         {
             "type": "user_input",
-            "content": [{ "type": "text", "text": "Se o usuário fizer uma saudação, você deve falar na sua resposta que você é um software, não é um humano, mas que pode ajudar o usuário a entender sobre investimentos"}]
+            "content": [{ "type": "text", "text": "Se o usuário fizer uma saudação, você deve falar na sua resposta que você é o InvestBot,um software especialista em investimentos, não é um humano, mas que pode ajudar o usuário a entender sobre investimentos"}]
         },
         {
             "type": "user_input",
-            "content": [{ "type": "text", "text": "Se o usuário te perguntar algo que não esteja relacionado com investimentos financeiros, você deve dizer 'não posso responder esta pergunta'"}]
+            "content": [{ "type": "text", "text": "Se o usuário te perguntar algo que não esteja relacionado com investimentos financeiros, você deve dizer 'Sou um especialista em investimentos, não posso responder a perguntas fora desse contexto'" }]
         },
         {
             "type": "user_input",
             "content": [{ "type": "text", "text": "Sempre que for necessário realizar alguma análise sobre investimentos, você deve executar as ferramentas disponíveis para obter informações atualizadas e confiáveis"}]
         },
+        {
+            "type": "user_input",
+            "content": [{ "type": "text", "text": "Responda à pergunta atual do usuário. Não reutilize uma resposta anterior quando ela não responder diretamente ao assunto atual. Perguntas sobre renda fixa, renda variável, ativos, risco, liquidez, rentabilidade ou tributação estão dentro do escopo de investimentos."}]
+        }
     ]
     
     for mensagem, resposta in conhecimento:
@@ -160,7 +164,7 @@ async def executar_com_contexto(contexto):
         if encontrada: 
             persona.append({ "type": "model_output", "text": resposta })
             
-            print(f"🤖: {resposta} [Resposta do cache]")
+            print(f"🤖: {resposta} [Recuperada do cache]")
         else:
             ferramentas_executadas = False
             

@@ -10,6 +10,10 @@ CAMPOS_OBRIGATORIOS = [
     "tributacao", "rentabilidade",
     "risco", "liquidez", "observacao"
 ]
+PALAVRAS_IGNORADAS_BUSCA = {
+    "a", "as", "ao", "aos", "como", "da", "das", "de", "do", "dos",
+    "e", "é", "em", "o", "os", "para", "por", "qual", "que", "um", "uma",
+}
 
 BASE_INVESTIMENTOS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "conhecimento", "dados_investimentos.json")
 NOME = "base_investimentos"
@@ -57,16 +61,19 @@ def buscar_ativo(termo):
             return ativo
     
     # Match parcial
-    palavras_buscadas = set(termo_normalizado.split())
+    palavras_buscadas = {
+        palavra for palavra in termo_normalizado.split()
+        if palavra not in PALAVRAS_IGNORADAS_BUSCA
+    }
     for ativo, termos in INDICE_BUSCA:
         for termo_cadastrado in termos:
-            if palavras_buscadas <= set(termo_cadastrado.split()):
+            if palavras_buscadas and palavras_buscadas <= set(termo_cadastrado.split()):
                 return ativo
     
     # Match por Substring
     if len(termo_normalizado) >= 4:
         for ativo, termos in INDICE_BUSCA:
-            if any(termo_normalizado in termo for termon in termos):
+            if any(termo_normalizado in termon for termon in termos):
                 return ativo
     
     return None
